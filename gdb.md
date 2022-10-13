@@ -13,9 +13,9 @@ Kill the running program.
 ## Breakpoints
 #### > break <*where*>
 Set a new breakpoint.
-#### > delete <breakpoint number>
+#### > delete [breakpoint number]
 Remove a breakpoint.
 #### > clear 
 Delete all breakpoints.
-#### > enable <breakpoint number>
+#### > enable [breakpoint number]
 Enable a disabled breakpoint.
