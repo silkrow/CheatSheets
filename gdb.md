@@ -25,4 +25,9 @@
 	Show information of all breakpoints.
 #### > maint info breakpoints
 	Show the breakpoints you set, and those GDB are using for internal purposes.
+## Watchpoints
+#### > watch <*where*>
+	Set a new watchpoint.
+#### > delete/enable/disable <*watchpoint#*>
+	Delete/enable/disable a watchpoint.
 
