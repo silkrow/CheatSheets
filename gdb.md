@@ -30,4 +30,10 @@
 	Set a new watchpoint.
 #### > delete/enable/disable <*watchpoint#*>
 	Delete/enable/disable a watchpoint.
-
+## <*where*>
+#### function_name
+	Break/watch the named function.
+#### line_number
+	Break/watch the line number in the current source file.
+#### file:line_number
+	Break/watch the line number in the named source file.
