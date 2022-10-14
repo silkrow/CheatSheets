@@ -21,6 +21,9 @@
 	Enable a disabled breakpoint.
 #### > disable [breakpoint number]
 	Disable a breakpoint. 
+#### > break <*where*> if <*condition*>
+	Break at the given location if the condition is met.
+	Conditions may be almost any C expression that evaluate to true or false.
 #### > info breakpoints
 	Show information of all breakpoints.
 #### > maint info breakpoints
@@ -30,6 +33,9 @@
 	Set a new watchpoint.
 #### > delete/enable/disable <*watchpoint#*>
 	Delete/enable/disable a watchpoint.
+#### > watch <*where*> if <*condition*>
+	Watch at the given location if the condition is met.
+	Conditions may be almost any C expression that evaluate to true or false.
 ## <*where*>
 #### function_name
 	Break/watch the named function.
@@ -37,3 +43,5 @@
 	Break/watch the line number in the current source file.
 #### file:line_number
 	Break/watch the line number in the named source file.
+## Stack
+
