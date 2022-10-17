@@ -23,7 +23,6 @@
 	Disable a breakpoint. 
 #### > break <*where*> if <*condition*>
 	Break at the given location if the condition is met.
-
 	Conditions may be almost any C expression that evaluate to true or false.
 #### > info breakpoints
 	Show information of all breakpoints.
@@ -36,7 +35,6 @@
 	Delete/enable/disable a watchpoint.
 #### > watch <*where*> if <*condition*>
 	Watch at the given location if the condition is met.
-
 	Conditions may be almost any C expression that evaluate to true or false.
 ## <*where*>
 #### function_name
@@ -76,19 +74,10 @@
 	Disable the „display“ with the given number.
 #### > x/*nfu* <*address*>
 	Print memory.
-
-	*n*: how many units to print(default 1).
-
-	*f*: format character(like "print").
-
-	*u*: unit, one of *b, h, w, g*
-		
-		*b*: byte
-
-		*h*: half-word(two bytes)
-
-		*w*: word(four bytes)
-
-		*g*: giant word(8 bytes)
-
-
+	n: how many units to print(default 1).
+	f: format character(like "print").
+	u: unit, one of b, h, w, g
+		b: byte
+		h: half-word(two bytes)
+		w: word(four bytes)
+		g: giant word(8 bytes)
