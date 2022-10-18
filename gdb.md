@@ -45,10 +45,10 @@
 	Break/watch the line number in the named source file.
 ## Stack
 #### > backtrace
-#### > where
 	Show call stack
+#### > backtrace [*n*]
+	Show call stack, of n innermost frames if n > 0, outermost if n < 0.
 #### > backtrace full
-#### > where full
 	Show call stack, also print the local variables in each frame.
 #### > frame <*frame#*>
 	Select the stack frame to operate on.
