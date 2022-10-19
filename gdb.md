@@ -36,13 +36,6 @@
 #### > watch <*where*> if <*condition*>
 	Watch at the given location if the condition is met.
 	Conditions may be almost any C expression that evaluate to true or false.
-## <*where*>
-#### function_name
-	Break/watch the named function.
-#### line_number
-	Break/watch the line number in the current source file.
-#### file:line_number
-	Break/watch the line number in the named source file.
 ## Stack
 #### > backtrace
 	Show call stack
@@ -52,6 +45,12 @@
 	Show call stack, also print the local variables in each frame.
 #### > frame <*frame#*>
 	Select the stack frame to operate on.
+#### > info args
+	Print arguments of the selected frame.
+#### > info locals
+	Print local variables of the selected frame.
+#### > info reg
+	Print register values of the selected frame.
 ## Stepping
 #### > step
 	Go to the next instruction(source line), diving into function.
@@ -81,3 +80,42 @@
 		h: half-word(two bytes)
 		w: word(four bytes)
 		g: giant word(8 bytes)
+---
+## *format*
+#### a
+	Pointer.
+#### c
+	Read as integer, print as character.
+#### d
+	Integer, signed decimal.
+#### f
+	Floating point number.
+#### o
+	Integer, print as octal.
+#### s
+	Try to treat as C string.
+#### t
+	Integer, print as binary.
+#### u
+	Integer, print as unsigned decimal.
+#### x
+	Integer, print as hexadecimal.
+## <*where*>
+#### function_name
+	Break/watch the named function.
+#### line_number
+	Break/watch the line number in the current source file.
+#### file:line_number
+	Break/watch the line number in the named source file.
+## <*what*>
+#### expression
+	Almost any C expression, including function calls (must be prefixed with a
+	cast to tell GDB the return value type).
+#### file_name::variable_name
+	Content of the variable defined in the named file (static variables).
+#### function::variable_name
+	Content of the variable defined in the named function (if on the stack).
+#### {*type*} address
+	Content at address, interpreted as being of the specified C type.
+#### $register
+	Content of named register.
