@@ -1,2 +1,2 @@
 # CheatSheets
-My cheatsheets for some tools
+Useful cheatsheets gathered online.
